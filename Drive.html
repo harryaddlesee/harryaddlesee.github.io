@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Halo Frontlines</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Style.css">    
+</head>
+<body onload="adPopup()">
+    <header>
+<ul class="nav-area">
+<li><a href="HomePage.html">Home</a></li>
+<li><a href="Credits.html">Credits</a></li>
+<li><a href="About.html">About</a></li>
+</ul>
+<div class="story-text">
+    <h1>
+        Halo <span>Frontlines</span>
+    </h1>
+    <p>
+        Your team begins getting ready to head out on their mission by<br>
+        armouring up and selecting their weapons that they will bring along<br>
+        on the mission. Your team has a total of 12 marines that fill 2<br>
+        warthogs and a scorpion tank, 3 in each of the warthogs and 6 on the<br>
+        tank, which is your main heavy armour. Any covenant that are unfortunate<br>
+        enough to come accross your team will be very quickly dealt with.
+    </p>
+</div>
+<div class="story-option">
+    <button onclick="document.location='StartFight2.html'">Continue</button>
+</div>
+<img src="./Images/Warthog.png" width="300" height="300" style="float:right">
+<img src="./Images/Scorpion.png" width="400" height="300">
+
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Download Clash Of Conquest NOW!!</h2>
+        </div>
+        <div class="modal-body">
+            <p>Get it for free by clicking below:</p>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Click Here</a>
+        </div>
+        <img src="./Images/Shield.png" alt="Clash of Conquest" width="300" height="300">
+        <div class="modal-footer">
+            <h3>Don't miss out on this limited time offer!!</h3>
+        </div>
+    </div>
+</div>
+  
+<script>
+    // get the modal
+    var modal = document.getElementById("myModal");
+    
+    // get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // when the user clicks the button, open the modal 
+    function adPopup() 
+    {
+      modal.style.display = "block";
+    }
+    
+    // when the user clicks on <span> (x), close the modal
+    span.onclick = function() 
+    {
+      modal.style.display = "none";
+    }
+    
+    // when the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) 
+    {
+      if (event.target == modal) 
+      {
+        modal.style.display = "none";
+      }
+    }
+</script>
+</body>
+</html>
